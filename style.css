@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Martel Sans", "Helvetica Neue", "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: black;
+    overflow: wrap;
+}
+
+.main {
+    background-image: url("assets/images/bg.jpg.jpg");
+    width: 100%;
+    height: 75vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box {
+    height: 75vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.65;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 60vw;
+    margin: auto;
+    justify-content: space-between;
+    height: 62px;
+
+}
+
+nav img {
+    color: red;
+    z-index: 10;
+    width: 150px;
+    position: relative;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.text {
+    display: flex;
+    height: calc(100% - 62px);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: "Martel Sans", sans-serif;
+    gap: 20px;
+    padding: 0px 30px;
+}
+
+.text> :nth-child(1) {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+
+.text> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.text> :nth-child(3) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px)  {
+    nav {
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+    .box {
+        height: 150vh;
+        flex-wrap: wrap;
+    }
+    .text {
+        font-size: 15px;
+    }
+    .main {
+        height: 150vh;
+    }
+}
+
+.seperation {
+    background-color: rgb(48, 48, 48);
+    height: 8px;
+    width: 100%;
+    z-index: 100;
+}
+
+.btn {
+    background-color: rgba(23, 23, 23, 0.7);
+    font-size: large;
+    color: rgba(255, 255, 255, 0.836);
+    border: 1px solid rgba(255, 255, 255, 0.521);
+}
+
+.btn-2 {
+    background-color: red;
+    color: white;
+    border: red;
+    font-size: 19px;
+}
+
+.btn-1 {
+    border-radius: 6px;
+}
+
+.b1tn {
+    padding: 10px 46px;
+    margin: 2px;
+}
+
+.b2tn {
+    padding: 3px 19px;
+    margin: 16px;
+}
+
+.btn-3 {
+    background-color: red;
+    color: white;
+    border: red;
+    font-size: 21px;
+    border-radius: 6px;
+    padding: 8px 59px;
+    margin: 0px;
+    font-weight: bolder;
+}
+
+.main input {
+    color: white;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+    .first {
+        flex-wrap: wrap;
+    }
+}
+
+.secimg img {
+    width: 40vw;
+    height: 40vw;
+    z-index: 10;
+    position: relative;
+}
+
+.secimg {
+    position: relative;
+}
+
+.secimg video {
+    width: 40vw;
+    height: 40vw;
+    position: absolute;
+    top: 5px;
+}
+section.first > div {
+    display: flex;
+    flex-direction: column;
+}
+
+section.first > div :nth-child(1) {
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+section.first > div :nth-child(2) {
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.img5 img {
+    width: 40vw;
+    height: 40vw;
+    z-index: 10;
+    position: relative;
+}
+
+.img5 {
+    position: relative;
+}
+
+.img5 video {
+    width: 25vw;
+    height: 30vw;
+    position: absolute;
+    left:7vw;
+}
+.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+.fourth{
+    width:90vw ;
+}
+.head {
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+}
+
+@media screen and (max-width: 850px) {
+    .head {
+        font-size: 40px;
+        font-weight: 100;
+    }
+}
+
+.faqbox {
+    gap: 8px 0px;
+    width: 60vw;
+}
+
+.qa {
+    display: flex;
+    color: white;
+    background-color: #313131;
+    font-size: 23px;
+    font-weight: bolder;
+    height: 50px;
+    padding: 6px 30px;
+    justify-content: space-between;
+    align-items: center;
+    text-wrap: wrap;
+}
+
+.readit {
+    color: white;
+    padding: 25px 0px 10px 0px;
+    font-size: 23px;
+}
+
+@media screen and (max-width: 800px) {
+    .readit{
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .faq {
+        flex-wrap: wrap;
+    }
+    .qa {
+        font-size: 10px;
+        padding: 10px;
+    }
+    .head {
+        font-size: 15px;
+        font-weight: 100;
+    }
+    .readit {
+        font-size: medium;
+    }
+}
+
+.foot input {
+    background-color: black;
+    color: white;
+    border-radius: 9px;
+    height: 15px;
+    width: 320px;
+    padding: 25px;
+    font-size: medium;
+    font-weight: bold;
+    border: gray solid 1px;
+}
+
+.foot button {
+    background-color: red;
+    border-radius: 9px;
+    color: white;
+    border-color: red;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 7px 30px;
+    margin: 2px 8px;
+}
+
+@media screen and (max-width: 620px) {
+    .foot button {
+        font-size: 18px;
+        padding: 7px 30px;
+        margin: 5px 8px;
+    }
+    .foot input {
+        padding: 15px; 
+    }
+}
+@media screen and (max-width: 290px){
+    .foot input {
+        width: 90vw;
+    }
+    .faq{
+        flex-direction: row;
+    }
+
+}
+@media screen and (max-height: 700) {
+    .foot{
+        display: hide;
+    }
+}
+.last {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 68px;
+    color: rgb(121, 121, 121);
+    font-size: 15px;
+    margin: auto;
+    width: 70vw;
+}
+
+.boxlast {
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(4, 25px);
+    row-gap: 2px;
+    column-gap: 2px;
+}
+
+@media screen and (max-width: 1200px) {
+    .boxlast {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }  
+}
+
+.lastbutton button {
+    background-color: black;
+    border: gray 1px solid;
+    color: white;
+    border-radius: 7px;
+    padding: 2px 40px;
+    margin: 20px 0px;
+    font-size: 20px;
+}
